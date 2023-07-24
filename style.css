@@ -27,7 +27,7 @@ body {
   
   #start-button {
     position: absolute;
-    top: 90%;
+    top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -38,6 +38,7 @@ body {
     box-shadow: 0;
     border-radius: 15px;
   }
+
 
   
   
