@@ -52,6 +52,58 @@ body {
 
   }
 
+   @media screen and (max-width: 768px) {
+      * {
+        font-size: 1rem;
+      }
+
+      .imagem,
+      .gameoverImagem {
+        height: 300px;
+      }
+
+      #start-button {
+        top: 80%;
+        font-size: 20px;
+        padding: 15px 30px;
+      }
+
+      .harry,
+      .harrycoder,
+      .voldermort,
+      .voldermort2,
+      .voldermort3 {
+        top: 30%;
+      }
+
+      main {
+        padding: 0.5rem;
+      }
+
+      .questions {
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .questions ol li {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 14px;
+      }
+
+      .cabeca {
+        height: 3rem;
+      }
+
+      .layoutTeste ul {
+        padding: 0;
+        justify-content: center;
+      }
+
+      .layoutTeste ul li {
+        margin-right: 10px;
+      }
+    }
 
   .harry {
     position: absolute;
