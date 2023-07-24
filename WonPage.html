@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! You Won!</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #222;
+        }
+        p , h1 { 
+            color: #fff;
+           
+        }
+        
+        /* Estilos para o cabeçalho */
+        .cabeca {
+            background-color: #870007;
+            color: #fff;
+            padding: 10px;
+        }
+        .layout {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .layoutTesteNav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end; /* Alinha os itens à direita */
+        }
+        .layoutTesteNav li {
+            margin-right: 20px;
+        }
+        .layoutTesteNav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos específicos para celular */
+        @media only screen and (max-width: 600px) {
+            .layout {
+                padding: 0 10px; /* Adiciona espaço nas laterais */
+            }
+            .layoutTesteNav {
+                justify-content: center; /* Centraliza os itens */
+                margin-top: 10px; /* Espaçamento entre o cabeçalho e o conteúdo */
+            }
+            .layoutTesteNav li {
+                margin-right: 10px; /* Diminui o espaçamento entre os itens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabeca">
+        <div class="layout">
+            <nav class="layoutTesteNav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1> Great job! </h1>
+    <p>
+        You scored more than 40 points. 
+    </p>
+    <p>
+        Now, Harry Coder can go to Hogwarts to study and become a true programmer.
+    </p>
+    <p>
+        <img src="Images/potterhome.jpg" alt="Hogwarts">
+    </p>
+</body>
+</html>

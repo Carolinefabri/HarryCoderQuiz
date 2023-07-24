@@ -182,19 +182,22 @@ a.addEventListener('click', clickA);
 b.addEventListener('click', clickB);
 c.addEventListener('click', clickC);
 
-// Função para exibir o fim do jogo
+
 
 
 function endOfGame() {
-    if (score >= 50) {
-      instructions.textContent = 'You WON! Harry Coder can now be a programmer';
-    } else {
-      instructions.style.display = 'none'; // Oculta o elemento de instruções
-      gameOverScreen.style.display = 'block'; // Mostra a tela de fim de jogo
-    }
+  if (score >= 50) {
+    instructions.textContent = 'You WON! Harry Coder can now be a programmer';
+    // Redirecionar para a página "WonPage"
+    setTimeout(function() {
+      window.location.href = "WonPage.html";
+    }, 1500); // Redirecionar após 1 segundo
+  } else {
+    instructions.style.display = 'none'; // Oculta o elemento de instruções
+    gameOverScreen.style.display = 'block'; // Mostra a tela de fim de jogo
+    // Redirecionar para a página "gameOver.html"
+    setTimeout(function() {
+      window.location.href = "gameOver.html";
+    }, 1500); // Redirecionar após 1,5 segundos
   }
-  
-  // Evento de clique para iniciar o quiz
-  startButton.addEventListener('click', function() {
-    redirectToNextPage();
-  });
+}
