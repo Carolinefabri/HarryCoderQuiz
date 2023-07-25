@@ -59,7 +59,7 @@ const q0 = {
     numQuestion: 4,
     fragen: 'What does getElementById() do in JavaScript?',
     alternativaA: "Retrieve elements by class name.;",
-    alternativaB: "Retrieve an element by its unique ID attribute.;",
+    alternativaB: 'Retrieve an element by its unique ID attribute.;',
     alternativaC: "Retrieve elements by tag name.;",
     correct: 'Retrieve an element by its unique ID attribute.;',
   };
