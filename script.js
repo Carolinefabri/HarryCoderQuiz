@@ -57,11 +57,11 @@ const q0 = {
   
   const q4 = {
     numQuestion: 4,
-    fragen: 'What is the correct JavaScript syntax to change the content of an HTML element?',
-    alternativaA: "document.getElement('elementId').innerHTML = 'new content';",
-    alternativaB: "document.getElementById('elementId').innerHTML = 'new content';",
-    alternativaC: "document.getElementByName('elementName').innerHTML = 'new content';",
-    correct: "document.getElementById('elementId').innerHTML = 'new content';",
+    fragen: 'What does getElementById() do in JavaScript?',
+    alternativaA: "Retrieve elements by class name.",
+    alternativaB: "Retrieve elements by tag name.",
+    alternativaC: " Retrieve an element by its unique ID attribute.",
+    correct: "Retrieve an element by its unique ID attribute.",
   };
   
   const q5 = {
