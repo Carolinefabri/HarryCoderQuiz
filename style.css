@@ -447,3 +447,8 @@ button {
     text-decoration: none;
   }
   
+  /* Estilo para ocultar visualmente o elemento de áudio */
+#audioContainer {
+    display: none;
+  }
+  

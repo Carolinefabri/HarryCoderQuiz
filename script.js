@@ -6,6 +6,23 @@ let score = 0;
 let gameOverScreen = document.querySelector('#gameOverScreen');
 let gameWonScreen = document.querySelector('#gameWonScreen');
 
+
+
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Iniciar a reprodução de áudio quando a janela carrega
+window.addEventListener('load', () => {
+  backgroundMusic.play().catch((err) => {
+    console.log('Reprodução automática impedida pelo navegador. Interaja com a página para habilitar o áudio.');
+  });
+});
+
+// Parar a reprodução de áudio quando a janela descarregar (mudança de página)
+window.addEventListener('unload', () => {
+  backgroundMusic.pause();
+});
+
+
 // PERGUNTA
 let numQuestion = document.querySelector('#numQuestion');
 let fragen = document.querySelector('#fragen');
